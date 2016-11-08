@@ -1,0 +1,394 @@
+<!--
+Author: Arqum Ahmad
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title> Home with Happiness | Home</title>
+<!--mobile apps-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--mobile apps-->
+<!--Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/prettySticky.css" type="text/css">
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->
+<!-- start-smoth-scrolling-->
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+		
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+</head>
+<body>
+	<!--banner-->
+	<div  id="home" class="banner">
+		<div class="banner-info">
+			<!--navigation-->
+			<div class="top-nav">
+				<nav>
+					<div class="container">
+						<div class="navbar-header logo">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" rel="home" href="index.html" title= "Homes with Happiness"><img src="images/logo.png" class="img"></a>
+						</div>
+                        
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-right">
+								<li><a href="#home" class="link-arq active scroll"><span data-letters="Home">Home</span></a></li>
+								<li><a href="about.html" class="link-arq"><span data-letters="About">About</span></a></li>	
+								<li><a href="portfolio.html" class="link-arq"><span data-letters="Projects">Projects</span></a></li>
+								<li><a href="contact.html" class="link-arq"><span data-letters="Contact">Contact</span></a></li>
+							</ul>	
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</nav>
+			</div>	
+			<!--//navigation-->
+			<div class="banner-text">
+				<!--banner Slider starts Here-->
+				<script src="js/responsiveslides.min.js"></script>
+				<script>
+					// You can also use "$(window).load(function() {"
+					$(function () {
+					  // Slideshow 3
+					  $("#slider3").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: false,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+						  $('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+						  $('.events').append("<li>after event fired.</li>");
+						}
+					  });
+				
+					});
+				</script>
+				<!--//End-slider-script-->
+				<div  id="top" class="callbacks_container">
+					<ul class="rslides" id="slider3">
+						<li>
+							<div class="banner-text-info">
+								<h2>Home with Happiness</h2>	
+								<h3>Destination Of Your Dreams</h3>
+								
+
+								<div class="more">
+									<a href="about.html" class="button-pipaluk button--inverted"> Read More</a>
+								</div>	
+							</div>	
+						</li>
+						<li>
+							<div class="banner-text-info">
+								<h2>WE'LL HELP YOU FIND YOUR DREAM HOME</h2>	
+								<h3></h3>	
+								<div class="more">
+									<a href="about.html" class="button-pipaluk button--inverted"> Read More</a>
+								</div>	
+							</div>	
+						</li>
+						
+						
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<!--//banner-->
+	<!--welcome-->
+	<div class="welcome">
+		<div class="container">
+			<div class="col-md-6 welcome-left ">
+				<img src="images/img1.jpg" alt=""/>
+			</div>
+			<div class="col-md-6 welcome-right">
+				<h3 class="title">Welcome!</h3>
+				<p>At Home With Happiness </p>
+				<div class="welcome-info">
+					<div class="col-md-2 welcome-text wtext-left">
+						<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+					</div>
+					<div class="col-md-10 welcome-text wtext-right">
+						<h4>We are more than builders.</h4>
+						<p>We are construction partners who are passionate about what we do.
+						We pride ourselves in being solution providers.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="welcome-info">
+					<div class="col-md-2 welcome-text wtext-left">
+						<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+					</div>
+					<div class="col-md-10 welcome-text wtext-right">
+						<h4>Experience our Project</h4>
+						<p>We love to build. What can we build for you ? </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//welcome-->
+	<!--tabs-->
+	<div class="tabs">
+		<div class="container">
+			<div class="col-md-6 tabs-left">
+				<div class="col-xs-2 tab-grid-left"> <!-- required for floating -->
+					<!-- Nav tabs -->
+					 <ul class="nav nav-tabs">
+						<li class="active"><a href="#Tab1" data-toggle="tab">About</a></li>
+						<li><a href="#Tab2" data-toggle="tab">Offers</a></li>
+						<li><a href="#Tab3" data-toggle="tab">Advantage</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-10 tab-grid-right">
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane active" id="Tab1">
+							<div class="text">
+								<h3 class="title">AboutUs</h3>
+								<p>HWH is a one of the best emerging
+								real state company in INDIA.
+								HWH has started its work in
+								2009 registered and
+								fully established and properly
+								running its business now.
+								Track record of sustained growth,
+								customer satisfaction and innovation.
+								The company has 3 of planned projects
+								with 5 of projects under construction. </p>
+								<div class="more more2">
+									<a href="about.html" class="button-pipaluk button--inverted"> Read More</a>
+								</div>	
+							</div>
+						</div>
+						<div class="tab-pane" id="Tab2">
+							<div class="text">
+								<h3 class="title">Offers</h3>
+								<p>HWH's primary business
+								is development of Residential,
+								Marketing projects and retail properties.
+								The company has a unique business model with
+								earnings arising from development and rentals.
+								Its exposure across businesses, segments and
+								geographies, mitigates any down-cycles in the market.
+								From developing 3 major colonies in Lucknow,2 in
+								Mumbai and 1 in Noida company in establishing itself
+								as a reliable entity . HWH is now present across 3
+								states 5 cities in India. </p>
+								<div class="more more2">
+									<a href="about.html" class="button-pipaluk button--inverted"> Read More</a>
+								</div>	
+							</div>
+						</div>
+						<div class="tab-pane" id="Tab3">
+							<div class="text">
+								<h3 class="title">Advantages</h3>
+								<p> The advantage of choosing us.
+								The development business of HWH
+								includes Homes, Villas, plots,
+								real estate marketing projects
+								and Lands as well. The Homes business
+								caters to 3 segments of the residential
+								market - Super Luxury, Luxury and Premium.
+								The product offering involves a wide range
+								of products including duplexes, row houses
+								and apartments of varying sizes
+ </p>
+								<div class="more more2">
+									<a href="about.html" class="button-pipaluk button--inverted"> Read More</a>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-6 tabs-right ">
+				<img src="images/img2.jpg" alt=""/>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//tabs-->
+	<!-- services -->
+	
+	
+	
+	<!-- testimonials -->
+	<div class="testimonials">
+		<div class="container">
+			<h3 class="title"></h3>
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="testimonials-grid">
+								<img src="images/quote.png" alt=" " class="img-responsive" />
+								<p>Santa has bring home for you everyday with happiness.
+
+</p>
+								<h5><span> </span></h5>
+							</div>
+						</li>
+						
+						<li>
+							<div class="testimonials-grid">
+								<img src="images/quote.png" alt=" " class="img-responsive" />
+								<p>Peace promise prosperity with home with happiness</p>
+								
+							</div>
+						</li>
+						
+						<li>
+							<div class="testimonials-grid">
+								<img src="images/quote.png" alt=" " class="img-responsive" />
+								<p>This is not just the change of address also the gain of happiness</p>
+							
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+			</section>
+				<!--FlexSlider-->
+					<script defer src="js/jquery.flexslider.js"></script>
+					<script type="text/javascript">
+					$(window).load(function(){
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+					  });
+					});
+				  </script>
+				<!--End-slider-script-->
+		</div>
+	</div>
+	<!-- //testimonials -->
+	
+	
+	<div class="services" id="services">
+		<div class="container">
+			<h3 class="title">Services</h3>
+			<div class="servc-grids">
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-home effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Developers</h4>
+						<p>We are developers of Real Estate Strategies,
+						Marketing Plans, Revenue Generation and Cunsultancy Scopes. </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-briefcase effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Property Consultant</h4>
+						<p>We provide the most comprehensive  Real Estate experience in the Industry by delivering a world-class service
+						centered on integrity, communication and expertise while always placing the needs of our clients first.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="servc-grids">
+				<div class="col-md-6 servc-grid">
+					<div class="col-xs-3 servc-grid-left">
+						<span class="glyphicon glyphicon-globe effect-1" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-9 servc-grid-right">
+						<h4>Real Estate Marketing</h4>
+						<p>Creating a Marketing Plan and Developing some new Real Estate Marketing Ideas.
+						That's what we are here for. We compiled a list of great advice on Marketing and how to generate more Real Estate Leads from leading
+						Real Estate Professionals.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+                <div class="clearfix"> </div>
+				</div>
+				
+		</div>
+	</div>
+	<!-- //services -->
+	<!--slid-->
+	
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			
+			<div class="col-md-3 footer-grids">
+					<h3>Contact Us</h3>
+				<p>D196 2nd Floor<br>
+                	Vibhuti Khand Gomti Nagar<br>
+                    Lucknow
+                    
+					<span>Office: +91 7080 900 003</span>
+                    <span>        +91 7080 900 004</span>
+                    <span>E-mail: saurabhvicky1988@gmail.com</span>
+                   
+        
+				</p>
+				<div class="footer-bottom">
+					
+					
+				</div>
+			</div>
+			<div class="col-md-5 footer-grids">
+				<h3></h3>
+			
+				 <p><b>OTHER BRANCHES</b>:<br>
+                    NOIDA<br>
+                    MUMBAI<br>
+                    GORAKHPUR<br>
+                    PADRAUNA<p>
+                    
+              
+			</div>
+		
+			<div class="clearfix"> </div>
+			<div class="footer-copy">
+				<p>© 2016 Home with Happiness. All rights reserved </p>
+			</div>
+		</div>
+	</div>
+	<!--//footer-->
+	<!-- script-for prettySticky -->
+	<script src="js/prettySticky.js"></script>
+	<!--//script-for prettySticky -->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
